@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+header{
+    /* background-color: lightcoral; */
+    height: 5rem;
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+.titlebar{
+    height: 50%;
+    /* outline: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title-img{
+    height: 60%;
+    margin-left: 1rem;
+}
+.title{
+    font-size: 1rem;
+}
+
+.menubar{
+    display: flex;
+    margin-left: 1rem;
+    gap: 0.8rem;
+    align-items: center;
+    /* outline: 2px solid red; */
+    height: 50%;
+
+}
+
+
+main{
+    background-color: black;
+    height: calc(100vh - 9rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5a/Media_Player_Windows_11_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:6%;
+}
+
+
+.menu{
+    position: relative;
+}
+
+.menu:hover{
+    background-color: lightblue;
+    border: 1px solid black;
+
+}
+
+
+.menu-items{
+    position: absolute;
+    top: 4px;
+    background-color: white;
+    display: none;
+    padding: 0.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 100px;
+    border-radius: 6px;
+}
+
+.speedUp:hover{
+    background-color: gray;
+}
+
+.speedDown:hover{
+    background-color: gray;
+}
+
+.volumeUp:hover{
+    background-color: gray;
+}
+
+.volumeDown:hover{
+    background-color: gray;
+}
+
+
+li{
+    padding: 0.25rem;
+}
+
+ul{
+    width: 9rem;
+}
+
+.menu:hover .menu-items{
+    display: block;
+}
+
+.video-input{
+    display: none;
+}
+
+.video{
+    height: 100%;
+}
+
+.toast{
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    top: 99px;
+    right: 47px;
+    display: none;
+}
+
+
+footer{
+    background-color: black;
+    height: 4rem;
+}
+
+.time-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.time-container>* {
+    /* outline: 1px solid red; */
+    text-align: center;
+}
+
+.current-time,.total-time {
+    width: 5%;
+    min-width: 44px;
+    color: white;
+
+}
+
+.time-slider {
+    width: 93%;
+}
+
+.slider {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    font-size: x-small; 
+    gap: 1rem;
+    
+}
+
+.play-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    /* height: 20px; */
+    margin-bottom: 10px;
+  } 
+
+  .pause-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  } 
+
+
+  .fullScreen-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  } 
+ 
+  .backward-button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .forward-button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1000px){
+    .time-slider {
+        width: 75%;
+    }
+
+    .time-container {
+        justify-content: space-evenly;
+    }
+
+
+}
+/* .custom-controls{
+    display: none;
+}
+
+.video:hover + .custom-controls{
+    display: flex;
+} */
+
+/* https://upload.wikimedia.org/wikipedia/commons/3/38/VLC_icon.png */
+
+
+.btn:hover {
+    border: 1px solid white;
+    background-color: black;
+    font-size: 10px;
+}
